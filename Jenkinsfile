@@ -14,7 +14,8 @@ pipeline {
         }
         stage(' Run') {
             steps {
-                sh 'cd TestJenkins && python3 jenkins.py'
+                sh 'python3 jenkins.py'
+                // sh 'cd TestJenkins && python3 jenkins.py'
             }
         }
     }
