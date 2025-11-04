@@ -1,5 +1,6 @@
-node {
-
+pipeline {
+    agent any
+    stages {
     stage(' Clone') {
         steps {
             git'https://github.com/uoded/TestJenkins.git'
@@ -10,4 +11,6 @@ node {
             sh 'cd TestJenkins && python3 jenkins.py'
         }
     }
+}
+
 }
