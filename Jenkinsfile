@@ -2,7 +2,7 @@ node {
 
     stage(' Clone') {
         steps {
-            git 'https://github.com/uoded/TestJenkins.git'
+            git'https://github.com/uoded/TestJenkins.git'
         }
     }
     stage(' Run') {
