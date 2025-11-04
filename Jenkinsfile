@@ -8,7 +8,8 @@ pipeline {
         }
         stage(' Clone') {
             steps {
-                sh 'git clone https://github.com/uoded/TestJenkins.git'
+                git branch: 'main', url: 'https://github.com/uoded/TestJenkins.git'
+                // sh 'git clone https://github.com/uoded/TestJenkins.git'
             }
         }
         stage(' Run') {
