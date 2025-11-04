@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage(' Clone') {
+        stage(' Clean') {
             steps {
                 sh ' rm -r TestJenkins/'
             }
         }
         stage(' Clone') {
             steps {
-                git'https://github.com/uoded/TestJenkins.git'
+                sh 'git clone https://github.com/uoded/TestJenkins.git'
             }
         }
         stage(' Run') {
