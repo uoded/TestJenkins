@@ -1,1 +1,1 @@
-print("My test file for Jenkins")
+print("My test file for Jenkins job launched")
